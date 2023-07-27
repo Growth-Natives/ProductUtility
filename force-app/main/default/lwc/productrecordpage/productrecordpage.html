@@ -1,0 +1,50 @@
+<template>
+	<lightning-card label="Detail">
+		<p class="Detail"
+			style=" display: inline-block;font-size: 20px; font-weight: 400;line-height:1.235; padding-left: 1rem;">
+			Detail</p>
+
+		<lightning-button-icon icon-name="utility:close" alternative-text="back to Products" title="back"
+			style="float:right; padding-right: 1rem;" onclick={handleclick}></lightning-button-icon>
+		<lightning-tabset>
+			<template for:each={childRecordsMap} for:item="child">
+				<div key={child.Name}>
+					<lightning-tab label={child.Name} onactive={handleActive}>
+						<p class=""
+							style="font-size: 15px; font-weight: 600;line-height:1.235; padding-left: 1rem;padding-top: 1rem;padding-bottom:0.3rem">
+							{child.Name}</p>
+						<lightning-datatable key-field="Id" data={child.Records} show-row-number-column
+							row-number-offset={rowOffset} hide-checkbox-column columns={child.Columns} editable="true"
+							onrowaction={handleRowAction} draft-values={draftValues} onsave={handleSave}>
+						</lightning-datatable>
+					</lightning-tab>
+				</div>
+			</template>
+
+			<template if:true={scheduleTireValue}>
+				<lightning-tab label="Discount Schedule" onactive={handleActive}>
+					<template for:each={scheduleTireMap} for:item="data">
+						<div key={data}>
+							<p class=""
+								style="font-size: 15px; font-weight: 600;line-height:1.235; padding-left: 1rem; padding-top: 1rem; padding-bottom:0.3rem">
+								Discount Schedule</p>
+							<lightning-datatable key-field="Id" data={data.key} show-row-number-column
+								row-number-offset={rowOffset} hide-checkbox-column columns={dsColumn} editable="true"
+								onrowaction={handleRowAction} draft-values={draftValues} onsave={handleSave}>
+							</lightning-datatable>
+							<p class=""
+								style="font-size: 15px; font-weight: 600;line-height:1.235; padding-left: 1rem; padding-top: 1rem; padding-bottom:0.3rem">
+								Discount Tiers</p>
+							<lightning-datatable key-field="Id" data={data.value} show-row-number-column
+								row-number-offset={rowOffset} hide-checkbox-column columns={dtColumn} editable="true"
+								onrowaction={handleRowAction} draft-values={draftValues} onsave={handleSave}>
+							</lightning-datatable>
+						</div>
+					</template>
+				</lightning-tab>
+			</template>
+
+		</lightning-tabset>
+
+	</lightning-card>
+</template>

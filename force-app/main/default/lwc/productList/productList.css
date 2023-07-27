@@ -1,0 +1,61 @@
+.templateHeder{
+	margin-top: -0.1%;
+	background-color: white;
+	max-width: 100%;
+	padding-bottom: 1%;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.pageListSelectedClass{
+	
+	--slds-c-button-neutral-color-background: rgb(1, 118, 211);
+	--sds-c-button-text-color: white;
+	--slds-c-button-neutral-color-background-hover: rgb(1, 118, 211);
+	--slds-c-button-text-color-hover: white;
+}
+
+.pageListClass{
+	--sds-c-button-text-color: rgb(1, 118, 211);
+}
+.checkbox{
+	display: flex;
+    margin-left: 2%;
+    width: auto;
+}
+
+.slds-hint-parent .slds-cell-edit:hover .slds-button__icon_edit, .slds-hint-parent .slds-cell-edit:hover .slds-button__icon--edit, .slds-hint-parent .slds-cell-edit:focus .slds-button__icon_edit, .slds-hint-parent .slds-cell-edit:focus .slds-button__icon--edit {
+    opacity: 0.5;
+}
+
+.datatable-listPrice{
+	color: red;
+}
+.header1{
+	padding-top: 1%;
+       display: flex;
+	   margin-left: 1%;
+	   justify-content: space-between;
+	   padding-right: 1%;
+
+}
+.filterdiv{
+	display: inline-flex;
+	margin-right: 1%;
+	margin-top: -1%;
+}
+.card{
+	display: flex;
+}
+.header2{
+    display: flex;
+    align-items: center;
+    margin-top: 1%;
+	padding-bottom: 1%;
+	justify-content: space-between;
+	width: -webkit-fill-available;
+
+}
+.RecordInfo{
+	margin-left:70%;
+	display: flex;
+}

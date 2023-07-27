@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Block Price</label>
+    <protected>false</protected>
+    <values>
+        <field>Child_Relationship_Name__c</field>
+        <value xsi:type="xsd:string">SBQQ__BlockPrices__r</value>
+    </values>
+    <values>
+        <field>DisplayFields__c</field>
+        <value xsi:type="xsd:string">Name,SBQQ__Price__c,SBQQ__UpperBound__c,SBQQ__LowerBound__c</value>
+    </values>
+    <values>
+        <field>Object_API_Name__c</field>
+        <value xsi:type="xsd:string">SBQQ__BlockPrice__c</value>
+    </values>
+    <values>
+        <field>UpdateFields__c</field>
+        <value xsi:type="xsd:string">SBQQ__Price__c</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Price Tier</label>
+    <protected>false</protected>
+    <values>
+        <field>Child_Relationship_Name__c</field>
+        <value xsi:type="xsd:string">Price_Tiers__r</value>
+    </values>
+    <values>
+        <field>DisplayFields__c</field>
+        <value xsi:type="xsd:string">Name,Discount_Category__c,Min_Qty__c,Max_Qty__c,Price__c</value>
+    </values>
+    <values>
+        <field>Object_API_Name__c</field>
+        <value xsi:type="xsd:string">Price_Tier__c</value>
+    </values>
+    <values>
+        <field>UpdateFields__c</field>
+        <value xsi:type="xsd:string">Price__c</value>
+    </values>
+</CustomMetadata>
